@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Điều kiện bồi thường</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-label id="dkbt">Điều kiện bồi thường:</ion-label>
+    <ul id="dkbt-group">
+        <li class="dkbt-item" style="margin-top: 40px;">
+            <p>Khách hàng cung cấp và đáp ứng yêu cầu thuê xe của Thuê xe DLU. Không áp dụng các chính sách này cho các đối tượng không đủ điều kiện thuê hoặc phát hiện có dấu hiệu nghi vấn về giấy tờ, mục đích thuê xe.
+            </p>
+        </li>
+        <li class="dkbt-item">
+            <p>Khách hàng đã chốt đơn hàng với đối tác của Thuê xe DLU, có nhận thông tin đơn chốt nhưng đến thời điểm nhận xe không có xe để đi.</p>
+        </li>
+        <li class="dkbt-item">
+            <p>Khách hàng đã chốt đơn hàng với đối tác của Thuê xe DLU, có nhận thông tin đơn chốt, nhưng đối tác hủy đơn hàng trước thời điểm nhận xe mà Thuê xe DLU không sắp xếp được xe cho khách.
+            </p>
+        </li>
+    </ul>
+    <ion-label id="thkbt">Thuê xe DLU sẽ không bồi thường ㅤㅤㅤtrong các trường hợp:</ion-label>
+    <ul id="thkbt-group">
+        <li class="thkbt-item" style="margin-top: 10px;">
+            <p>
+                Thuê xe DLU hoặc đối tác của Thuê xe DLU tìm được chiếc xe khác cho khách để hổ trợ khách di chuyển.
+            </p>
+        </li>
+        <li class="thkbt-item">
+            <p>
+                Đối tác của Thuê xe DLU phải hủy chuyến do các sự kiện bất khả kháng như: động đất, sống thần, sạt lowxe, lũ lụt, giông bão, dịch bệnh, chiến tranh, đình công,...
+            </p>
+        </li>
+        <li class="thkbt-item">
+            <p>
+                Phát hiện ra các sự việc gian lận để đòi bồi thường.
+            </p>
+        </li>
+    </ul>
+    <br>
+    <div style="background: rgb(202, 202, 202);height:1px;width: 260px;"></div>
+    <ion-button id="ok" (click)="ok()">OK</ion-button>
+</ion-content>

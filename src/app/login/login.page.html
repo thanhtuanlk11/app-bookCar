@@ -1,0 +1,31 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar style="--background: #06d586;">
+        <ion-buttons slot="start">
+            <ion-button color="primary">
+                <ion-icon slot="icon-only" name="arrow-back" routerLink="/login"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-button style="--color: #fff;" routerLink="/sigup">Đăng kí</ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content style="--background: #3df7b0">
+    <div id="header">
+        <h1>Đăng Nhập</h1>
+        <img src="assets/icon/logoxe.png" id="anh">
+    </div>
+    <!-- 
+    <form>
+        <ion-input id="tk" placeholder="Tài Khoản"></ion-input>
+        <ion-input id="mk" type="password" placeholder="Mật Khẩu"></ion-input>
+        <ion-button id="nut" expand="block" shape="round" fill="clear" routerLink="/trangchu">Đăng Nhập</ion-button>
+    </form> -->
+    <div class="ion-padding">
+        <ion-input [(ngModel)]="email" id="email" type="email" placeholder="Tài khoản"></ion-input>
+        <ion-input [(ngModel)]="password" id="password" type="password" placeholder="Mật khẩu"></ion-input>
+        <p (*ngif)="showMessage">{{message}}</p>
+        <ion-button (click)="clickButton()" id="nut">Đăng nhập</ion-button>
+    </div>
+</ion-content>

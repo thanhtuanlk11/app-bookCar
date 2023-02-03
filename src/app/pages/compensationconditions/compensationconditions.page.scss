@@ -1,0 +1,36 @@
+#dkbt{
+    font-size: 13px;
+    position: absolute;
+    top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.dkbt-item{
+    font-size: 13px;
+    text-align: justify;
+    padding-right: 20px;
+}
+#thkbt{
+    font-size: 13px;
+    text-align: justify;
+    top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.thkbt-item{
+    font-size: 13px;
+    text-align: justify;
+    padding-right: 20px;
+}
+#ok{
+    float: right;
+    --background: rgb(246, 223, 53);
+    border: 5px outset rgb(255, 186, 36);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#ok:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}

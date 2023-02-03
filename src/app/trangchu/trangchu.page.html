@@ -1,0 +1,165 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="end" id="btnBack">
+            <ion-back-button defaultHref="/"></ion-back-button>
+            <img src="assets/icon/logoxe.png" id="anh" routerLink="/gioithieu">
+        </ion-buttons>
+        <ion-title id="name">
+            THUÊ XE DLU
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-toolbar>
+        <ion-label id="di">Đi theo cách của bạn</ion-label><br>
+        <ion-button class="loaixe">
+            <ion-icon name="car"></ion-icon>
+            <ion-label>ㅤÔ tôㅤ</ion-label>
+            <input type="radio" name="chonxe">
+        </ion-button>
+
+        <ion-button class="loaixe">
+            <ion-icon name="bicycle"></ion-icon>
+            <ion-label>ㅤXe máyㅤ</ion-label>
+            <input type="radio" name="chonxe">
+        </ion-button>
+
+        <details id="luachon">
+            <summary>Lựa chọn khu vực</summary>
+            <input type="checkbox" name="khuvuc"> Phường 1 <br>
+            <input type="checkbox" name="khuvuc"> Phường 2 <br>
+            <input type="checkbox" name="khuvuc"> Phường 3 <br>
+            <input type="checkbox" name="khuvuc"> Phường 4 <br>
+            <input type="checkbox" name="khuvuc"> Phường 5 <br>
+            <input type="checkbox" name="khuvuc"> Phường 6 <br>
+            <input type="checkbox" name="khuvuc"> Phường 7 <br>
+            <input type="checkbox" name="khuvuc"> Phường 8 <br>
+            <input type="checkbox" name="khuvuc"> Phường 9 <br>
+            <input type="checkbox" name="khuvuc"> Phường 10 <br>
+            <input type="checkbox" name="khuvuc"> Phường 11 <br>
+            <input type="checkbox" name="khuvuc"> Phường 12 <br>
+            <input type="checkbox" name="khuvuc"> Tà Nung <br>
+            <input type="checkbox" name="khuvuc"> Trạm Hành <br>
+            <input type="checkbox" name="khuvuc"> Xuân Thọ <br>
+            <input type="checkbox" name="khuvuc"> Xuân Trường <br>
+        </details>
+
+        <ion-button class="ngaythue" (click)="ngaynhan()">
+            <ion-label>Ngày nhận xeㅤ</ion-label>
+            <ion-icon name="calendar"></ion-icon>
+        </ion-button>
+
+        <ion-button class="ngaythue" (click)="ngaytra()">
+            <ion-label>Ngày trả xeㅤ</ion-label>
+            <ion-icon name="calendar"></ion-icon>
+        </ion-button>
+
+        <ion-button id="timxe">
+            <ion-label>Tìm xe giá tốtㅤ</ion-label>
+            <ion-icon name="search"></ion-icon>
+        </ion-button>
+
+        <div id="loiich">
+            <p id="loiich-name">Lợi ích khi thuê xe tại<br> Thuê xe DLU</p>
+            <div id="menu-loiich">
+                <div id="menu-loiich_group">
+                    <div class="menu-loiich_item">
+                        <p class="loiich-name">
+                            <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                            Thuận tiện
+                        </p>
+                        <span class="loiich-nd">Dễ dàng tìm kiếm, so sách và đặt chiếc xe như ý với chỉ vài thao tác</span>
+                    </div>
+                    <div class="menu-loiich_item">
+                        <p class="loiich-name">
+                            <ion-icon name="car-sport-outline"></ion-icon>
+                            Bảo hiểm
+                        </p>
+                        <span class="loiich-nd">An tâm với các gói bảo hiểm chất lượng cao của các hãng uy tín</span>
+                    </div>
+                    <div class="menu-loiich_item">
+                        <p class="loiich-name">
+                            <ion-icon name="thumbs-up-outline"></ion-icon>
+                            Tin cậy
+                        </p>
+                        <span class="loiich-nd">Các xe đều có thời gian sử dụng dưới 3 năm và được bảo dưỡng thường xuyên</span>
+                    </div>
+                    <div class="menu-loiich_item">
+                        <p class="loiich-name">
+                            <ion-icon name="headset-outline"></ion-icon>
+                            Hỗ trợ 24/7
+                        </p>
+                        <span class="loiich-nd">Đội ngũ hỗ trợ khách hàng sẽ luôn ở bên bạn trong suốt quá trình thuê xe</span>
+                    </div>
+                    <div class="menu-loiich_item">
+                        <p class="loiich-name">
+                            <ion-icon name="cash-outline"></ion-icon>
+                            Giá cả cạnh tranh
+                        </p>
+                        <span class="loiich-nd">Giá thuê được niêm yết công khai và rẽ hơn 10% so với gia truyền thống</span>
+                    </div>
+                    <div class="menu-loiich_item">
+                        <p class="loiich-name">
+                            <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                            Nhiều lựa chọn
+                        </p>
+                        <span class="loiich-nd">Hàng trăm loại xe đa dạng ở nhiều địa điểm trên cả nước, phù hợp mọi mục đích của bạn</span>
+                    </div>
+                </div>
+            </div>
+
+            <p id="cachthue">Thuê xe như thế nào</p>
+            <div class="cachthue-item">
+                <ion-icon class="icon-cachthue" name="globe-outline"></ion-icon>
+                <img src="https://vcdn-vnexpress.vnecdn.net/2020/11/14/sian-roadster-price-1605369239-9473-1605370896.jpg" alt="https://vcdn-vnexpress.vnecdn.net/2020/11/14/sian-roadster-price-1605369239-9473-1605370896.jpg" height="50px">
+                <p class="cachthue-name">
+                    1 - Đặt xe trên ứng dụng
+                </p>
+                <span class="cachthue-nd">Nhanh chống đặt một chiếc xeㅤㅤ ứng ý thông qua ứng dụng củaㅤㅤ chúng tôi</span>
+            </div>
+            <div class="cachthue-item">
+                <ion-icon name="key-outline" class="icon-cachthue"></ion-icon>
+                <img src="data:image/jpeg;base64,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"
+                    alt="" height="40px">
+                <p class="cachthue-name">
+                    2 - Nhận xe
+                </p>
+                <span class="cachthue-nd">Nhận xe tại nhà hoặc các đại lýㅤㅤ trong khu vực của chúng tôi</span>
+            </div>
+            <div class="cachthue-item">
+                <ion-icon name="bicycle-outline" class="icon-cachthue"></ion-icon>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShSPNJlGcin9xjv0_Bu4733cGODiqB3JIYqg&usqp=CAU" alt="" height="35px">
+                <p class="cachthue-name">
+                    3 - Tận hưởng
+                </p>
+
+                <span class="cachthue-nd">Sau khi hoàn tất thủ tục, bạn chỉㅤ cần nhận xe và lên đường. Tất cảㅤ các phương tiện của chúng tôiㅤㅤ đều đạt chuẩn an toàn</span>
+            </div>
+        </div>
+
+    </ion-toolbar>
+
+    <ion-toolbar id="menu">
+        <ion-tabs>
+            <ion-tab-bar slot="bottom">
+                <ion-tab-button tab="home">
+                    <ion-icon name="home" routerLink="/trangchu"></ion-icon>
+                    <ion-label>Trang chủ</ion-label>
+                </ion-tab-button>
+                <ion-tab-button tab="album">
+                    <ion-icon name="albums-outline" routerLink="/chinhsach"></ion-icon>
+                    <ion-label>Chính sách</ion-label>
+                </ion-tab-button>
+                <ion-tab-button tab="help">
+                    <ion-icon name="help-circle-outline" routerLink="/hotro"></ion-icon>
+                    <ion-label>Hỗ trợ</ion-label>
+                </ion-tab-button>
+                <ion-tab-button tab="account">
+                    <ion-icon name="person-circle-outline" routerLink="/taikhoan"></ion-icon>
+                    <ion-label>Tài khoản</ion-label>
+                </ion-tab-button>
+            </ion-tab-bar>
+        </ion-tabs>
+    </ion-toolbar>
+</ion-content>

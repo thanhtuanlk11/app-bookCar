@@ -1,0 +1,65 @@
+<ion-header class="dau">
+    <ion-toolbar>
+        <ion-buttons slot="end" id="btnBack">
+            <ion-back-button defaultHref="/"></ion-back-button>
+            <img src="assets/icon/logoxe.png" id="anh">
+        </ion-buttons>
+        <ion-title id="name">
+            Hỗ trợ
+        </ion-title>
+    </ion-toolbar>
+    <form id="form">
+        <ion-button routerLink="/huongdanthuexe" class="cauhoi" expand="block" shape="round" fill="clear">Hướng dẫn thuê xe<img src="assets/icon/hepl.png" class="help"></ion-button>
+        <ion-button routerLink="/hopdong" class="cauhoi" expand="block" shape="round" fill="clear">Hợp đồng thuê xe tự lái<img src="assets/icon/hepl.png" class="help"></ion-button>
+        <ion-button routerLink="/tienichhotro" class="cauhoi" expand="block" shape="round" fill="clear">Tiện ích hỗ trợ<img src="assets/icon/hepl.png" class="help"></ion-button>
+        <ion-button routerLink="/caccauhoithuonggap" class="cauhoi" expand="block" shape="round" fill="clear">Câu hỏi thường gặp<img src="assets/icon/hepl.png" class="help"></ion-button>
+        <ion-button type="button" onclick="location.href='https://thuexedlu.blogspot.com/';" class="cauhoi" expand="block" shape="round" fill="clear">Thuê xe DLU blog<img src="assets/icon/hepl.png" class="help"></ion-button>
+    </form>
+
+</ion-header>
+<ion-content>
+    <form class="form">
+        <h1 id="lh">
+            Thông tin liên hệ
+        </h1>
+        <div>
+            <h2 class="dc"> <img src="assets/icon/map.png" class="hinh"> Phường 8 : 7B,Phù Đổng Thiên Vương,Phường 8 Thành Phố Đà Lạt</h2>
+        </div>
+        <div>
+            <h2 class="dc"> <img src="assets/icon/map.png" class="hinh"> Phường 6 : 234,Hai Bà Trưng,Phường 6 Thành Phố Đà Lạt</h2>
+        </div>
+        <div>
+            <h2 class="dc"> <img src="assets/icon/phone.png" class="hinh"> 0904941277</h2>
+        </div>
+        <div>
+            <h2 class="dc"><img src="assets/icon/gmail.png" class="hinh"> NhomIV@gmail.com</h2>
+        </div>
+        <div>
+            <h3>Rất vui được phục vụ các bạn <img src="assets/icon/tim1.png" id="tim"></h3>
+        </div>
+    </form>
+    <div style="height: 50px;"></div>
+    <ion-toolbar id="menu">
+        <ion-tabs>
+            <ion-tab-bar slot="bottom">
+                <ion-tab-button tab="home">
+                    <ion-icon name="home" routerLink="/trangchu"></ion-icon>
+                    <ion-label>Trang chủ</ion-label>
+                </ion-tab-button>
+                <ion-tab-button tab="album">
+                    <ion-icon name="albums-outline" routerLink="/chinhsach"></ion-icon>
+                    <ion-label>Chính sách</ion-label>
+                </ion-tab-button>
+                <ion-tab-button tab="help">
+                    <ion-icon name="help-circle-outline" routerLink="/hotro"></ion-icon>
+                    <ion-label>Hỡ trợ</ion-label>
+                </ion-tab-button>
+                <ion-tab-button tab="account">
+                    <ion-icon name="person-circle-outline" routerLink="/taikhoan"></ion-icon>
+                    <ion-label>Tài khoản</ion-label>
+                </ion-tab-button>
+            </ion-tab-bar>
+        </ion-tabs>
+    </ion-toolbar>
+
+</ion-content>

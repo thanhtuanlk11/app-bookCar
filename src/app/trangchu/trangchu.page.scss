@@ -1,0 +1,219 @@
+#name {
+    font-size: 12px;
+    color: rgb(15, 201, 34);
+}
+
+#home {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#anh {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-left: 270%;
+    margin-top: 10%;
+    border-radius: 5%;
+    border: 1px solid #06d586;
+}
+
+#btnBack {
+    margin-right: 80%;
+}
+
+#di {
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(10, 227, 72);
+    font-weight: bold;
+}
+
+.loaixe {
+    font-size: 9.5px;
+    margin-top: 10px;
+    margin-left: 5px;
+    --background: #06d586;
+    border-radius: 5px;
+    --color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 4px outset rgb(23, 129, 7);
+    height: 35px;
+    width: 115px;
+    margin-bottom: 10px;
+}
+
+.loaixe:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#khuvucchon {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgb(156, 156, 156);
+    width: 250px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.ngaythue {
+    font-size: 8px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 5px;
+    --background: #06d586;
+    border: 4px outset rgb(23, 129, 7);
+    --color: #000;
+    border-radius: 5px;
+    height: 35px;
+    width: 115px;
+}
+
+.ngaythue:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#timxe {
+    margin-top: 30px;
+    margin-left: 5px;
+    width: 245px;
+    --background: #06d586;
+    border: 4px outset rgb(23, 129, 7);
+    border-radius: 3px;
+    animation-name: timxe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    --color: #000;
+}
+
+@keyframes timxe {
+    0% {
+        border-top: 5px outset rgb(153, 51, 51);
+    }
+    30% {
+        border-right: 4px outset rgb(153, 53, 51);
+    }
+    65% {
+        border-bottom: 5px outset rgb(153, 51, 51);
+    }
+    100% {
+        border-left: 4px outset rgb(153, 51, 51);
+    }
+}
+
+#timxe:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#luachon {
+    color: rgb(5, 222, 63);
+    margin-left: 10px;
+}
+
+#luachon:hover {
+    cursor: pointer;
+}
+
+.khuvuc {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+#loiich {
+    width: 250px;
+    height: 975px;
+    margin-left: 5px;
+    margin-top: 10px;
+    background-color: rgb(233, 140, 140);
+}
+
+#menu {
+    position: fixed;
+    bottom: 0px;
+}
+
+#loiich-name {
+    padding-top: 20px;
+    margin-left: 5px;
+    color: #0b930e;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#menu-loiich {
+    height: 180px;
+    overflow-x: scroll;
+}
+
+#menu-loiich::-webkit-scrollbar {
+    display: none;
+}
+
+#menu-loiich_group {
+    width: 1200px;
+    height: 175px;
+}
+
+.menu-loiich_item {
+    border: 1px solid #084409;
+    border-radius: 5px;
+    margin-bottom: -20px;
+    display: inline-block;
+    width: 155px;
+    height: 160px;
+    background: #fff;
+    margin-right: 10px;
+}
+
+.loiich-name {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: #000;
+}
+
+.loiich-nd {
+    font-size: 15px;
+    text-align: center;
+    color: #084409;
+}
+
+#cachthue {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: #08a80a;
+}
+
+.cachthue-item {
+    width: 250px;
+    height: 200px;
+    background: #fff;
+    border: 1px solid #084409;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.cachthue-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #000;
+    margin-top: 10px;
+}
+
+.cachthue-nd {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 15px;
+    text-align: center;
+    color: #084409;
+}
+
+.icon-cachthue {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 50px;
+}

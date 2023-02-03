@@ -1,0 +1,25 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="end" id="btnBack">
+            <ion-back-button defaultHref="/"></ion-back-button>
+            <ion-button id="login" routerLink="/login">Login </ion-button>
+        </ion-buttons>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div id="header">
+        <h1>Đăng Kí</h1>
+        <img src="assets/icon/logoxe.png" id="anh">
+    </div>
+
+    <div class="ion-padding">
+
+        <ion-input id="email" [(ngModel)]="email" type="email" placeholder="Nhập Email"></ion-input>
+        <ion-input id="password" [(ngModel)]="password" type="password" placeholder="Nhập mật khẩu"></ion-input>
+        <ion-input id="passwordagain" [(ngModel)]="password" type="password" placeholder="Nhập lại mật khẩu"></ion-input>
+        <p (*ngif)="showMessage">{{message}}</p>
+        <ion-button id="nut" (click)="addAccount()">Đăng kí</ion-button>
+    </div>
+</ion-content>

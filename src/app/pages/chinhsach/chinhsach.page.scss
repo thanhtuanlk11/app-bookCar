@@ -1,0 +1,97 @@
+#name{
+    font-size: 10px;
+    color: rgb(17, 84, 5);
+  }
+  #anh{
+    width: 30px;
+        height: 30px;
+        margin-bottom: 15px;
+        margin-left: 270%;
+        margin-top:10%;
+        border-radius: 5%;
+        border: 1px solid #000000;
+  }
+  #btnBack{
+    margin-right: 80%;
+  }
+  #menu{
+    position: fixed;
+    bottom: 0px;
+  }
+  #chinhsach{
+    margin-left: 10px;
+    font-size: 20px;
+    color: rgb(0, 86, 37);
+    font-weight: bold;
+  }
+  #chinhsach-bg{
+    height: 120px;
+    background-image: url(xe.jpg);
+    background-size: cover;
+    margin-top: 10px;
+    border-bottom: 5px solid rgb(216, 216, 216);
+    margin-bottom: 10px;
+  }
+  #chinhsach-hh{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  #tieuchuan-dv{
+    margin-left: 10px;
+    color: rgb(0, 93, 12);
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .nd-truockhithue{
+    width: 100%;
+    text-align: justify;
+    margin-bottom: -25px;
+    padding-right: 10px;
+  }
+  .nd-giaoxe{
+    width: 100%;
+    text-align: justify;
+    margin-bottom: -25px;
+    padding-right: 10px;
+  }
+  .chinhsach-bh-nd{
+    width: 100%;
+    text-align: justify;
+    margin-bottom: -25px;
+    padding-left: 40px;
+    padding-right: 10px;
+  }
+  #tieuchuan::-webkit-scrollbar{
+    display: none;
+  }
+  #chinhsach-bh{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(0, 93, 12);
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #link-boihoan{
+    text-decoration: none;
+    color: #27bfb6;
+    font-size: 10px;
+    margin-left: 60px;
+  }
+  #link-boihoan:hover{
+    cursor: pointer;
+    color: red;
+  }
+  #dong{
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 200px;
+    --background: #15cfcf;
+  }
+  #dong:hover{
+    cursor: pointer;
+    opacity: 0.5;
+  }
